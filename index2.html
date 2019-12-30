@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lunar Consultancy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Lunar Consultancy </h2>
+<p>Lunar Consultancy are ipsum dolor sit amet, consectetur adipiscing elit</p>
+<p>test</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">January</a></li>
+      <li><a href="#">February</a></li>
+      <li><a href="#">March</a></li>
+    </ul>
+  </nav>
+
+  <article>
+
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="openCity('Home')">Home</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Services')">Services</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Contact')">Contact us</button>
+    </div>
+
+    <div id="Home" class="w3-container city">
+      <h2>Home</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+
+    <div id="Services" class="w3-container city" style="display:none">
+      <h2>Services</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div id="Contact" class="w3-container city" style="display:none">
+      <h2>Contact us</h2>
+      <p>Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis</p>
+    </div>
+
+    <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+    }
+    </script>  </article>
+</section>
+
+<footer>
+  <a class="footer-link" href="https://www.linkedin.com/in/richard-gumbs-75605638/detail/contact-info/">LinkedIn</a>
+  <a class="footer-link" href="https://www.facebook.com/richard.gumbs.5">Facebook</a>
+  <a class="footer-link" href="https://twitter.com/richardgumbs">Twitter</a>
+  <a class="footer-link" href="https://www.facebook.com/">Website</a>
+  <p class="copyright">© 2020 Lunar Consultancy</p>
+</footer>
+
+</body>
+</html>
