@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Lunaris Consultancy Ltd</title>
+<link rel="icon"  href="Moon2.ico">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -11,15 +12,20 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  <!-- background-image: url('moon_background.jpg');-->
 }
 
 /* Style the header */
 header {
   background-color: white;
+  background-image: url('moon_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: black;
+  color: white;
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -41,7 +47,12 @@ article {
   float: left;
   padding: 20px;
   width: 70%;
+  background-image: url('moon_background.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
   background-color: #f1f1f1;
+  color: white;
   height: 500px; /* only for demonstration, should be removed */
 }
 
@@ -81,6 +92,7 @@ footer {
 </header>
 
 <section>
+
   <nav>
     <ul>
       <li><a href="#">January</a></li>
@@ -90,7 +102,7 @@ footer {
   </nav>
 
   <article>
-
+<!--<img src="moon_background.jpg" alt="Trulli" width="500" height="333">-->
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button" onclick="openCity('Summary')">Summary</button>
       <button class="w3-bar-item w3-button" onclick="openCity('AreaOfExpertise')">Area of expertise</button>
