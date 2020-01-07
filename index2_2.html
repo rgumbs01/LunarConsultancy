@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lunaris Consultancy Ltd</title>
+<link rel="icon"  href="Moon2.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  <!-- background-image: url('moon_background.jpg');-->
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  background-image: url('moon_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-image: url('moon_background.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  background-color: #f1f1f1;
+  color: white;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<!--
+<h1>Lunaris Consultancy Ltd</h1>
+<p>Lunar Consultancy are ipsum dolor sit amet, consectetur adipiscing elit</p>
+<p>test</p>
+-->
+<header>
+  <h2>Lunaris Consultancy Ltd</h2>
+</header>
+
+<section>
+
+  <nav>
+    <ul>
+      <li><a href="#">January</a></li>
+      <li><a href="#">February</a></li>
+      <li><a href="#">March</a></li>
+    </ul>
+  </nav>
+
+  <article>
+<!--<img src="moon_background.jpg" alt="Trulli" width="500" height="333">-->
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="openCity('Summary')">Summary</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('AreaOfExpertise')">Area of expertise</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Experience')">Experience</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Services')">Services</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Profile')">Profile</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Mission')">Mission Statement</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('Values')">Values</button>
+	  <button class="w3-bar-item w3-button" onclick="openCity('RHAPE')">RHAPE</button>
+    </div>
+
+    <div id="Summary" class="w3-container city">
+      <h2>Summary</h2>
+      <p>Working in the last decade, I have gained various training in specialist areas, such as; age assessment, exploitation, domestic abuse and reflective training. I have also gained additional accreditation by F-Form training and computing.</p>
+	  <p>I have worked in Children Centres and collaborated with the mental health foundation, whereby work was funded to engage with vulnerable young mothers in inner London (young mothers) and exploration around their mental health and parenting as a young person.</p>
+	  <p>Working in various Local Authorities in London and around London, I have gained a vast amount of experience in Child Protection undertaking various roles up to being pivotal in Ofsted improvement plan, various risk assessments, training and management.</p>
+	  <p>Service provided by Lunaris Consultancy can be commissioned by public bodies, service users, statutory services, individuals, service users or request for expert witness statements can be requested.</p>
+	  <p>Initial consultations are initially on the telephone and this is for 15-30 minutes to discuss the case.</p>
+	  <p>Service Users and individuals are to email enquires and a timely response would be given advise on appropriate pathway in regards to you enquiry.</p>
+    </div>
+
+    <div id="AreaOfExpertise" class="w3-container city" style="display:none">
+      <h2>Area of expertise</h2>
+      <p>Child Protection</p>
+	  <p>FGM</p>
+	  <p>Child Exploitation</p>
+	  <p>Child Sexual abuse/ inter-familial abuse</p>
+    </div>
+
+    <div id="Experience" class="w3-container city" style="display:none">
+      <h2>Experience</h2>
+      <p>Over a decade of experience in Social Work and a expert in field the child protection.</p>
+    </div>
+	
+	<div id="Services" class="w3-container city" style="display:none">
+      <h2>Services</h2>
+	  <h1>Training:</h1>
+      <p>Child Protection</p>
+	  <p>Safeguarding</p>
+	  <p>FGM</p>
+	  <p>Tailored training</p>
+	  
+	  <h1>Assessments:</h1>
+      <p>Single Assessments</p>
+	  <p>s.47 assessments</p>
+	  <p>Viability Assessment</p>
+	  <p>Return Home Interviews</p>
+	  <p>F- Form Assessments</p>
+	  
+	  <h1>Professional Support:</h1>
+      <p>Supervision (Peer/Social Work)</p>
+	  <p>Coaching and mentoring</p>
+	  
+	   <h1>Other:</h1>
+      <p>Internal Audits</p>
+	  <p>Court statements</p>
+    </div>
+
+	<div id="Profile" class="w3-container city" style="display:none">
+      <h2>Profile</h2>
+      <p>I am Alisha Gumbs, I have been practicing social work for a decade and I have worked in various Local Authorities in London and Essex, in different sectors from private, public and voluntary sector.</p>
+	  <p>I like to work with all types of people essentially, my aim is to help and support as this is my vocation.</p>
+	  <p>I have experience in the child protection arena; including attending court and providing statements and evidence, completing various assessments. I have experience in forced marriage, sexual abuse, mental health, spiritual possession and Female genital mutilation.</p>
+	  <p>The FGM case being the Landmark case in the UK, as this was the first criminal conviction to be obtained.</p>
+	  <p>I am an experience manager in safeguarding and also design and facilitate training in all areas of social work.</p>
+    </div>
+
+	<div id="Mission" class="w3-container city" style="display:none">
+      <h2>Mission Statement</h2>
+      <p>Lunaris Consultancy is a service that provides a professional independent social work service.</p>
+	  <p>The goal of Lunaris Consultancy is to provide a personal and professional service ranging from private consultations (social work queries), report writing, training, professional support and audits.</p>
+	  <p>Our primary goal is to provide a holistic service for organisations that require professionalism, empowerment and honesty.</p>
+    </div>
+	
+ 	<div id="Values" class="w3-container city" style="display:none">
+		<h2>Values</h2>
+		<!--
+		<p>Lunaris Consultancy is a service that provides a professional independent social work service.</p>
+		-->
+   </div>
+    
+	<div id="RHAPE" class="w3-container city" style="display:none">
+		<h2>RHAPE</h2>
+		<p>Respect</p>
+		<p>Honesty</p>
+		<p>Authenticity</p>
+		<p>Professionalism</p>
+		<p>Empowerment</p>
+   </div>
+  
+
+ 
+
+    <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+    }
+    </script>  </article>
+</section>
+
+<footer>
+  <a class="footer-link" href="https://www.linkedin.com/in/richard-gumbs-75605638/detail/contact-info/">LinkedIn</a>
+  <a class="footer-link" href="https://www.facebook.com/richard.gumbs.5">Facebook</a>
+  <a class="footer-link" href="https://twitter.com/richardgumbs">Twitter</a>
+  <a class="footer-link" href="https://www.facebook.com/">Website</a>
+  <p class="copyright">© 2020 Lunar Consultancy</p>
+</footer>
+
+</body>
+</html>
